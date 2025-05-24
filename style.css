@@ -161,9 +161,9 @@ section {
 }
 
 .cta-button {
-    background:transparent; /* Green button */
+    background:red; /* Green button */
     color: #fff;
-    border: 1px solid rgb(129, 129, 129);
+    border:none;
     padding: 12px 40px;
     border-radius: 50px;
     text-decoration: none;
@@ -171,7 +171,7 @@ section {
 }
 
 .cta-button:hover {
-    background-color: #b90101; /* Darker green hover */
+    background-color: green; /* Darker green hover */
 }
 
 .split1{
