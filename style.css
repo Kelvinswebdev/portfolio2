@@ -140,7 +140,10 @@ section {
 }
 
 #home {
-    background-image:url("pics/blue-stag-4JPXmg-N3sg-unsplash.jpg");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+    ), url("pics/amr-taha-UcXmYJzabkQ-unsplash (1).jpg");
     position: relative;
     background-size: cover;
     background-position: right;
@@ -150,6 +153,7 @@ section {
     align-items: center;
     justify-content: center;
 }
+
 
 @media screen and (max-width:992px){
   #home{
