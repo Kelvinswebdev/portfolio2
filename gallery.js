@@ -1,6 +1,6 @@
 
         const jobTitleElement = document.getElementById('job-title');
-        const jobTitles = ['Kelvin Selorm','a web developer',' a Photographer', 'a Graphic Designer', 'a Teacher'];
+        const jobTitles = ['Kelvin Selorm','we provide web developer services', ' Graphic Design services', ' Design Teaching services'];
         let currentIndex = 0;
 
         function updateJobTitle() {
