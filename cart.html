@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selorms | Order Printing & Branding</title>
+
+<link rel="stylesheet" href="cart.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="logo">Selorms Studio</div>
+
+<div class="cart-icon" onclick="toggleCart()">
+🛒 <span id="cartCount">0</span>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Order Branded & Printed Items</h1>
+<p>Select items, adjust quantity and place your order instantly.</p>
+</section>
+
+<div class="container">
+<div class="products">
+
+<!-- TSHIRT -->
+<div class="card">
+<img src="images/tshirt.jpg" class="product-img">
+<h3>Branded T-Shirts</h3>
+<p class="desc">Custom printed cotton tees for teams & brands</p>
+<p class="price">GHS 45</p>
+<div class="qty-control">
+<button onclick="changeQty('Branded T-Shirts',45,-1)">−</button>
+<span id="qty-Branded T-Shirts">0</span>
+<button onclick="changeQty('Branded T-Shirts',45,1)">+</button>
+</div>
+</div>
+
+<!-- POLO -->
+<div class="card">
+<img src="images/polo.jpg" class="product-img">
+<h3>Polo Shirts</h3>
+<p class="desc">Premium polos with logo embroidery/print</p>
+<p class="price">GHS 65</p>
+<div class="qty-control">
+<button onclick="changeQty('Polo Shirts',65,-1)">−</button>
+<span id="qty-Polo Shirts">0</span>
+<button onclick="changeQty('Polo Shirts',65,1)">+</button>
+</div>
+</div>
+
+<!-- TOTE -->
+<div class="card">
+<img src="images/totebag.jpg" class="product-img">
+<h3>Tote Bags</h3>
+<p class="desc">Canvas tote bags with logo print</p>
+<p class="price">GHS 30</p>
+<div class="qty-control">
+<button onclick="changeQty('Tote Bags',30,-1)">−</button>
+<span id="qty-Tote Bags">0</span>
+<button onclick="changeQty('Tote Bags',30,1)">+</button>
+</div>
+</div>
+
+<!-- STICKERS -->
+<div class="card">
+<img src="images/stickers.jpg" class="product-img">
+<h3>Custom Stickers</h3>
+<p class="desc">Product & packaging stickers</p>
+<p class="price">GHS 25</p>
+<div class="qty-control">
+<button onclick="changeQty('Custom Stickers',25,-1)">−</button>
+<span id="qty-Custom Stickers">0</span>
+<button onclick="changeQty('Custom Stickers',25,1)">+</button>
+</div>
+</div>
+
+<!-- BUSINESS CARDS -->
+<div class="card">
+<img src="images/cards.jpg" class="product-img">
+<h3>Business Cards (100pcs)</h3>
+<p class="desc">Premium matte or glossy cards</p>
+<p class="price">GHS 60</p>
+<div class="qty-control">
+<button onclick="changeQty('Business Cards',60,-1)">−</button>
+<span id="qty-Business Cards">0</span>
+<button onclick="changeQty('Business Cards',60,1)">+</button>
+</div>
+</div>
+
+<!-- FLYERS -->
+<div class="card">
+<img src="images/flyers.jpg" class="product-img">
+<h3>Flyers A5 (100pcs)</h3>
+<p class="desc">Promotional & event flyers</p>
+<p class="price">GHS 80</p>
+<div class="qty-control">
+<button onclick="changeQty('Flyers A5',80,-1)">−</button>
+<span id="qty-Flyers A5">0</span>
+<button onclick="changeQty('Flyers A5',80,1)">+</button>
+</div>
+</div>
+
+<!-- CALENDAR -->
+<div class="card">
+<img src="images/calendar.jpg" class="product-img">
+<h3>Table Top Calendar</h3>
+<p class="desc">Corporate desk calendars</p>
+<p class="price">GHS 35</p>
+<div class="qty-control">
+<button onclick="changeQty('Table Calendar',35,-1)">−</button>
+<span id="qty-Table Calendar">0</span>
+<button onclick="changeQty('Table Calendar',35,1)">+</button>
+</div>
+</div>
+
+<!-- NOTEBOOK -->
+<div class="card">
+<img src="images/notebook.jpg" class="product-img">
+<h3>Branded Notebooks</h3>
+<p class="desc">Custom cover notebooks</p>
+<p class="price">GHS 40</p>
+<div class="qty-control">
+<button onclick="changeQty('Notebooks',40,-1)">−</button>
+<span id="qty-Notebooks">0</span>
+<button onclick="changeQty('Notebooks',40,1)">+</button>
+</div>
+</div>
+
+<!-- MUG -->
+<div class="card">
+<img src="images/mug.jpg" class="product-img">
+<h3>Custom Mugs</h3>
+<p class="desc">Corporate & gift mugs</p>
+<p class="price">GHS 35</p>
+<div class="qty-control">
+<button onclick="changeQty('Custom Mugs',35,-1)">−</button>
+<span id="qty-Custom Mugs">0</span>
+<button onclick="changeQty('Custom Mugs',35,1)">+</button>
+</div>
+</div>
+
+<!-- CUSTOM REQUEST -->
+<div class="card">
+<img src="images/custom.jpg" class="product-img">
+<h3>Custom Design / Print Request</h3>
+<p class="desc">Logos, banners, packaging, large prints etc</p>
+<p class="price">Custom pricing</p>
+<div class="qty-control">
+<button onclick="changeQty('Custom Request',0,-1)">−</button>
+<span id="qty-Custom Request">0</span>
+<button onclick="changeQty('Custom Request',0,1)">+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- CART SIDEBAR -->
+<div class="cart-sidebar" id="cartSidebar">
+
+<div class="cart-header">
+<h2>Your Order</h2>
+<button onclick="toggleCart()">✕</button>
+</div>
+
+<div id="cartItems"></div>
+
+<div class="cart-total">
+Total: GHS <span id="total">0</span>
+</div>
+
+<div class="checkout-form">
+<input type="text" id="name" placeholder="Full name">
+<input type="text" id="phone" placeholder="Phone">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="business" placeholder="Business name (optional)">
+<textarea id="notes" placeholder="Sizes, colors, print details..." rows="3"></textarea>
+
+<p class="note">
+After placing order, our team will contact you to confirm design and delivery before production begins.
+</p>
+
+<button class="checkout-btn" onclick="submitOrder()">Place Order</button>
+</div>
+
+</div>
+
+<script src="cart.js"></script>
+</body>
+</html>
