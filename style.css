@@ -227,6 +227,7 @@ section {
   .split1left h1,.split1right h1{
     font-weight: lighter;
     font-size: 30px;
+     font-family: 'classy vogue', serif;
   }
 
   .split1left p,.split1right p{
