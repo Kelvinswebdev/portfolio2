@@ -324,6 +324,19 @@ section {
   gap: 50px;   
 }
 
+.bifoldcontent .bifoldcontentleft,.bifoldcontent .bifoldcontentright{
+  width: 50%;
+}
+
+.bifoldleft img{
+  width: 100%;
+}
+
+.bifoldright img{
+  width: 100%;
+}
+
+
 
 
 
