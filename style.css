@@ -315,6 +315,19 @@ section {
   }
 
 /* ############################################################ */
+
+.bifoldcontent{
+  max-width: 1300px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;   
+}
+
+
+
+
+
 .portfoli{
   background-color: #4e4e4e;
 }
