@@ -324,8 +324,24 @@ section {
   gap: 50px;   
 }
 
+@media screen and (max-width:992px) {
+  .bifoldcontent{
+    flex-direction: column;
+    padding: 20px 30px;
+    gap: 10px;
+    width: 100%;
+}
+}
+
 .bifoldleft ,.bifoldright{
   width: 50%;
+}
+
+@media screen and (max-width:992px) {
+  .bifoldleft ,.bifoldright {
+   
+    width: 100%;
+}
 }
 
 .bifoldleft img{
