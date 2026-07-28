@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Reset & Base Styles */
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #e3e3e3;
+  color: #333333;
+
+}
+
+/* Container Card */
+.case-study-container {
+  background-color: #e3e3e3;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+/* Left Column Styles */
+.meta-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meta-item h3,
+.content-block h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.meta-item p {
+  font-size: 13px;
+  color: #4a4a4a;
+  line-height: 1.4;
+}
+
+.meta-item ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.meta-item li {
+  font-size: 13px;
+  color: #4a4a4a;
+  line-height: 1.5;
+  margin-bottom: 0.2rem;
+}
+
+/* Right Column Styles */
+.content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-block p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .case-study-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+}
+
+.mockup {
+  max-width: 1100px;
+  margin: 0 auto;
+}
